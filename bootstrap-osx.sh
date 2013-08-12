@@ -13,3 +13,6 @@ cp -i font/SourceCodePro-1.017/*.otf ~/Library/Fonts
 
 # link Sublime Text 3 settings
 ln -is $PWD/app/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+
+# install 
+brew install coreutils ack git tmux reattach-to-user-namespace tree watch

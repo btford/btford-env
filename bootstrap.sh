@@ -13,6 +13,9 @@ ln -is $PWD/.dircolors ~/.dircolors
 ln -is $PWD/git/.gitconfig ~/.gitconfig
 ln -is $PWD/git/.gitignore_global ~/.gitignore_global
 
+# link tmux config
+ln -is $PWD/.tmux.conf ~/.tmux.conf
+
 if [[ $OS == 'Darwin' ]]; then
   ./bootstrap-osx.sh
 fi
