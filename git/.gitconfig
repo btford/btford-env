@@ -1,0 +1,24 @@
+[alias]
+  a = add -p
+  b = branch
+  cl = clone
+  cm = commit -m
+  c-a = commit --amend
+  co = checkout
+  d = diff
+  i = init
+  l = log -p
+  p = push
+  r = rebase
+  ri = rebase -i
+  s = status
+
+[core]
+	excludesfile = ~/.gitignore_global
+
+[user]
+	name = Brian Ford
+	email = btford@umich.edu
+
+[color]
+	ui = true
