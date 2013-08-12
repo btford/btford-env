@@ -8,8 +8,15 @@ Minimalist Dotfiles + Configs for doing things the way I do them.
 **WARNING** This install script will overwrite existing configs.
 In general it will prompt before doing so, but you should carefully backup any existing files before running this.
 
-To install, run `./boostrap.sh` from the root directory of this thing.
+To install:
 
+```shell
+git clone git@github.com:btford/btford-env.git btford-env
+cd $_
+./boostrap.sh
+```
+
+...and follow the prompts
 
 ## The Setup
 
