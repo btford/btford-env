@@ -22,3 +22,9 @@
 
 [color]
 	ui = true
+
+# CREDIT TO IGOR MINAR, A HERO TO US ALL
+#[remote "origin-prs"]
+#       fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
+[remote "upstream-prs"]
+       fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
