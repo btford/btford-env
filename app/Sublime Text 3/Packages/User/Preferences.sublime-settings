@@ -6,5 +6,6 @@
   "translate_tabs_to_spaces": true,
   "tab_size": 2,
   "hot_exit": false,
-  "remember_open_files": false
+  "remember_open_files": false,
+  "trim_trailing_white_space_on_save": true
 }
