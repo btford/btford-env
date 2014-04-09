@@ -1,11 +1,15 @@
-// Settings in here override those in "Default/Preferences.sublime-settings", and
-// are overridden in turn by file type specific settings.
 {
-  "font_face": "Source Code Pro Light",
-  "font_size": 14,
-  "translate_tabs_to_spaces": true,
-  "tab_size": 2,
-  "hot_exit": false,
-  "remember_open_files": false,
-  "trim_trailing_white_space_on_save": true
+	"color_scheme": "Packages/User/Monokai.tmTheme",
+	"font_face": "Source Code Pro Light",
+	"font_size": 18,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"remember_open_files": false,
+	"tab_size": 2,
+	"theme": "Soda Light 3.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
 }
