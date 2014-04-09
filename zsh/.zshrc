@@ -18,7 +18,7 @@ compinit -i
 export PATH=$PATH:/usr/local/share/npm/bin
 
 # gcutil
-export PATH=$PATH:~/Development/gcutil-1.8.3
+export PATH=$PATH:/Users/bford/google-cloud-sdk/bin
 
 # coreutils
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
