@@ -266,6 +266,11 @@ git_dirty() {
   command git diff --quiet --ignore-submodules HEAD &>/dev/null; [ $? -eq 1 ] && echo ' ☁'
 }
 
+# Are there stashes?
+function parse_git_stash {
+  [[ $(git stash list 2> /dev/null | tail -n1) != "" ]] && echo ' ☣'
+}
+
 # Displays the exec time of the last command if set threshold was exceeded
 cmd_exec_time() {
   local stop=`python -c 'import time;print int(round(time.time()*1000));'`
@@ -284,5 +289,5 @@ precmd() {
   unset cmd_timestamp
 }
 
-PROMPT='%F{red}λ %F{green}%c%F{cyan}$vcs_info_msg_0_`git_dirty`%F{yellow} `printf "%05d" $elapsed`ms %F{red}❯ %f'
+PROMPT='%F{red}λ %F{green}%c%F{cyan}$vcs_info_msg_0_%F{red}`git_dirty``parse_git_stash`%F{yellow} `printf "%05d" $elapsed`ms %F{red}❯ %f'
 
