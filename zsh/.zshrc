@@ -263,7 +263,7 @@ git_dirty() {
   # check if we're in a git repo
   command git rev-parse --is-inside-work-tree &>/dev/null || return
   # check if it's dirty
-  command git diff --quiet --ignore-submodules HEAD &>/dev/null; [ $? -eq 1 ] && echo '*'
+  command git diff --quiet --ignore-submodules HEAD &>/dev/null; [ $? -eq 1 ] && echo ' ☁'
 }
 
 # Displays the exec time of the last command if set threshold was exceeded
