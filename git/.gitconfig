@@ -12,7 +12,7 @@
   r = rebase
   ri = rebase -i
   s = status
-  pr = "!git checkout -b pr-${1} upstream/pr/${1};"
+  pr = "!pr() { git checkout -b pr-$1 upstream/pr/$1; }; pr"
 
 [core]
 	excludesfile = ~/.gitignore_global
