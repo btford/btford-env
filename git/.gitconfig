@@ -7,6 +7,7 @@
   c-pi = cherry-pick
   co = checkout
   d = diff
+  f = fetch
   i = init
   l = log -p
   p = push
