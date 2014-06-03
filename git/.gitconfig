@@ -4,6 +4,7 @@
   cl = clone
   cm = commit -m
   c-a = commit --amend
+  c-pi = cherry-pick
   co = checkout
   d = diff
   i = init
