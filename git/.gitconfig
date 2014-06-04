@@ -6,11 +6,14 @@
   c-a = commit --amend
   c-pi = cherry-pick
   co = checkout
+  com = checkout master
   d = diff
   f = fetch
   i = init
   l = log -p
   p = push
+  pum = push upstream master
+  pus = push upstream v1.2.x
   r = rebase
   ri = rebase -i
   s = status
