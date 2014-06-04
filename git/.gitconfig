@@ -17,6 +17,7 @@
   r = rebase
   ri = rebase -i
   s = status
+  last-sha = "!lsha() { git rev-parse master | pbcopy; git rev-parse master; }; lsha"
   pr = "!pr() { git checkout -b pr-$1 upstream/pr/$1; }; pr"
   doc-pr = "!docpr() { git f --all; git pr $1; git r upstream/master; git c-a; git co master; git r pr-$1; }; docpr"
   cp-stable = "!cpstable() { SHA=`git rev-parse master`; git f upstream v1.2.x; git co v1.2.x; git r upstream/v1.2.x; git c-pi $SHA; }; cpstable"
