@@ -21,6 +21,9 @@ alias subrv='subl `git diff-tree --no-commit-id --name-only -r ${1:-"HEAD"}`'
 # refresh zsh configs
 alias sz='source ~/.zshrc'
 
+# z.sh – https://github.com/rupa/z
+source $HOME/Development/z/z.sh
+
 ## Path
 #######
 
