@@ -2,8 +2,9 @@
 # version negative three
 #
 # based on gourmet copypasta from around the internet
-# especially https://github.com/robbyrussell/oh-my-zsh
-
+# especially:
+#   * https://github.com/robbyrussell/oh-my-zsh
+#   * http://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/
 
 ## Load and run compinit
 ########################
