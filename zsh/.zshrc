@@ -11,6 +11,15 @@
 autoload -U compinit
 compinit -i
 
+## Alias
+#######
+
+# open sublime with the files changed in the last commit
+# (handy for code reviews)
+alias subrv='subl `git diff-tree --no-commit-id --name-only -r ${1:-"HEAD"}`'
+
+# refresh zsh configs
+alias sz='source ~/.zshrc'
 
 ## Path
 #######
