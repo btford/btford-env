@@ -46,3 +46,20 @@ Most of these will be simlinked into their proper homes.
 
 Download [SourceCodePro](http://sourceforge.net/projects/sourcecodepro.adobe/?source=dlp)
 
+## See also
+
+### Projects
+
+* [zshuery](https://github.com/myfreeweb/zshuery) – minimal zsh framework;
+  uses git submodules which are enough cognitive overhead that I lazily gave up on using it.
+* [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) – used to use this but it's kinda bloat-y
+
+### Literature
+
+* [zsh from the ground up](http://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/)
+* [zsh completion style guide](https://github.com/zsh-users/zsh/blob/master/Etc/completion-style-guide)
+* [zsh completion docs](http://zsh.sourceforge.net/Doc/Release/Completion-System.html)
+
+
+## License
+MIT
