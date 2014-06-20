@@ -9,6 +9,8 @@
   com = checkout master
   d = diff
   f = fetch
+  fall = fetch --all
+  fum = fetch upstream master
   i = init
   l = log -p
   p = push
@@ -18,10 +20,10 @@
   ri = rebase -i
   s = status
   last-sha = "!lsha() { git rev-parse master | tr -d '\n' | pbcopy; git rev-parse master; }; lsha"
-  pr = "!pr() { git checkout -b pr-$1 upstream/pr/$1; }; pr"
-  doc-pr = "!docpr() { git f --all; git pr $1; git r upstream/master; git c-a; git co master; git r pr-$1; }; docpr"
+  pr = "!pr() { git co -b pr-$1 upstream/pr/$1; }; pr"
+  doc-pr = "!docpr() { git fum; git pr $1; git r upstream/master; git c-a; git co master; git r pr-$1; }; docpr"
   cp-stable = "!cpstable() { SHA=`git rev-parse master`; git f upstream v1.2.x; git co v1.2.x; git r upstream/v1.2.x; git c-pi $SHA; }; cpstable"
-  hub = "!hub() { cd ~/Development && git clone git@github.com:btford/$1.git; cd $1; }; hub"
+  hub = "!hub() { cd ~/Development && git cl git@github.com:btford/$1.git; cd $1; }; hub"
 
 [core]
 	excludesfile = ~/.gitignore_global
