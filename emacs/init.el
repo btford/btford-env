@@ -93,7 +93,7 @@
 ;;
 ;; (require 'yaml-mode)
 ;; (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
-;; 
+;;
 ;; Adding this code will make Emacs enter yaml mode whenever you open
 ;; a .yml file
 (add-to-list 'load-path "~/.emacs.d/vendor")
@@ -133,7 +133,12 @@
 
 ;; Langauage-specific
 (load "setup-clojure.el")
-(load "setup-js.el")
+;;(load "setup-js.el")
+
+;; Set path to dependencies
+(setq site-lisp-dir
+      (expand-file-name "site-lisp" user-emacs-directory))
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -143,9 +148,10 @@
  '(coffee-tab-width 2)
  '(custom-safe-themes
    (quote
-    ("1a85b8ade3d7cf76897b338ff3b20409cb5a5fbed4e45c6f38c98eee7b025ad4" "0c29db826418061b40564e3351194a3d4a125d182c6ee5178c237a7364f0ff12" "58c6711a3b568437bab07a30385d34aacf64156cc5137ea20e799984f4227265" "7bde52fdac7ac54d00f3d4c559f2f7aa899311655e7eb20ec5491f3b5c533fe8" default)))
+    ("0955207529e058377d18c39b58216c385e9bebe9f9706552c553873e97dcc186" "78fe52a6a45e4332e289cce3c0541defbecbdf176de561583ffdd25d9b59783b" "6f41b0ea3782865b0f62c2af208dcf283f909153bb89bfee2a059368faf37687" "4baffc44a44afbc270640b7539705da56ba3c07d7082f642e03eed1f06ff5256" "1a85b8ade3d7cf76897b338ff3b20409cb5a5fbed4e45c6f38c98eee7b025ad4" "0c29db826418061b40564e3351194a3d4a125d182c6ee5178c237a7364f0ff12" "58c6711a3b568437bab07a30385d34aacf64156cc5137ea20e799984f4227265" "7bde52fdac7ac54d00f3d4c559f2f7aa899311655e7eb20ec5491f3b5c533fe8" default)))
  '(git-gutter+-window-width 8)
  '(global-whitespace-mode nil)
+ '(linum-format " %4i ")
  '(neo-banner-message "")
  '(neo-show-hidden-files t)
  '(neo-theme (quote ascii))
@@ -155,4 +161,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(highlight ((t (:background "gray17"))))
+ '(neo-dir-link-face ((t (:foreground "sky blue"))))
+ '(neo-expand-btn-face ((t (:foreground "SkyBlue"))))
+ '(neo-file-link-face ((t (:foreground "#D6D6D6"))))
+ '(neo-header-face ((t (:foreground "#D6D6D6"))))
  '(whitespace-space ((t (:foreground "darkgray")))))

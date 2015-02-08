@@ -25,6 +25,12 @@
 (global-set-key (kbd "C-M-s") 'isearch-forward)
 (global-set-key (kbd "C-M-r") 'isearch-backward)
 
+;;
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
+
 ;; Don't use hard tabs
 (setq-default indent-tabs-mode nil)
 
@@ -72,9 +78,18 @@
 (setq electric-indent-mode nil)
 
 ;; custom file extensions
+(add-hook 'js-mode-hook 'js2-minor-mode)
+(add-hook 'js2-mode-hook 'ac-js2-mode)
 (add-to-list 'auto-mode-alist '("\\.ats\\'" . typescript-mode))
-(add-to-list 'auto-mode-alist '("\\.es5\\'" . js-mode))
-(add-to-list 'auto-mode-alist '("\\.es6\\'" . js-mode))
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.es5\\'" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.es6\\'" . js2-mode))
+
+(eval-after-load 'js2-mode '(require 'setup-js2-mode))
+
+
+;; turn on spellcheck for markdown
+(add-hook 'markdown-mode-hook 'flyspell-mode)
 
 ;; kate-like line wrapping:
 ;; done by enabling adaptive-wrap minor mode in all buffers
@@ -98,3 +113,5 @@
 ;;(add-hook 'js-mode-hook 'js2-minor-mode)
 ;;(add-hook 'js2-mode-hook 'ac-js2-mode)
 
+;; remove trailing whitespace
+(add-hook 'before-save-hook 'delete-trailing-whitespace)

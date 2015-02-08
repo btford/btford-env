@@ -24,9 +24,9 @@
 
   (custom-theme-set-variables
     'granger
-    '(linum-format " %7i "))
+    '(linum-format " %4i "))
 
-  (let ((background "#111013")
+  (let ((background "#1D1E1A")
         (selection  "#11253A"))
 
   (custom-theme-set-faces
@@ -35,7 +35,7 @@
 ;; Default colors
 ;; *****************************************************************************************
 
-   `(default                          ((t (:foreground "#ABAEB3" :background ,background))))
+   `(default                          ((t (:foreground "#D6D6D6" :background ,background))))
    `(region                           ((t (:background ,selection                       ))))
    `(cursor                           ((t (:background "#ffffff"                        ))))
    `(fringe                           ((t (:background "#2f2f2f"   :foreground "#ffffff"))))
@@ -47,7 +47,7 @@
 
 ;; Font lock faces
 ;; *****************************************************************************************
- 
+
    `(font-lock-keyword-face           ((t (:foreground "#3ca380"))))
    `(font-lock-type-face              ((t (:foreground "#484879"))))
    `(font-lock-constant-face          ((t (:foreground "#3F5C70"))))
@@ -56,7 +56,7 @@
    `(font-lock-string-face            ((t (:foreground "#699ABC"))))
    `(font-lock-comment-face           ((t (:foreground "#496b83"))))
    `(font-lock-comment-delimiter-face ((t (:foreground "#666688"))))
- 
+
    `(font-lock-function-name-face     ((t (:foreground "#3ca380"))))
    `(font-lock-doc-string-face        ((t (:foreground "#496B83")))))
 

@@ -22,7 +22,7 @@
 
 (deftheme graham "A dark color theme for Emacs")
 
-(let ((*background*         "#161A1F")
+(let ((*background*         "#1D1E1A")
       (*comments*           "#615953")
       (*constant*           "#F38630")
       (*current-line*       "#151515")
@@ -108,4 +108,3 @@
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
-

@@ -1,0 +1,108 @@
+;;-*-coding: utf-8;-*-
+(define-abbrev-table 'Buffer-menu-mode-abbrev-table '())
+
+(define-abbrev-table 'Info-edit-mode-abbrev-table '())
+
+(define-abbrev-table 'awk-mode-abbrev-table
+  '(
+   ))
+
+(define-abbrev-table 'c++-mode-abbrev-table
+  '(
+   ))
+
+(define-abbrev-table 'c-mode-abbrev-table
+  '(
+   ))
+
+(define-abbrev-table 'clojure-mode-abbrev-table '())
+
+(define-abbrev-table 'comint-mode-abbrev-table '())
+
+(define-abbrev-table 'completion-list-mode-abbrev-table '())
+
+(define-abbrev-table 'edit-abbrevs-mode-abbrev-table '())
+
+(define-abbrev-table 'emacs-lisp-byte-code-mode-abbrev-table '())
+
+(define-abbrev-table 'emacs-lisp-mode-abbrev-table '())
+
+(define-abbrev-table 'fundamental-mode-abbrev-table '())
+
+(define-abbrev-table 'global-abbrev-table
+  '(
+    ("f" "function " nil 3)
+   ))
+
+(define-abbrev-table 'grep-mode-abbrev-table '())
+
+(define-abbrev-table 'ibuffer-mode-abbrev-table '())
+
+(define-abbrev-table 'idl-mode-abbrev-table '())
+
+(define-abbrev-table 'inferior-lisp-mode-abbrev-table '())
+
+(define-abbrev-table 'java-mode-abbrev-table
+  '(
+   ))
+
+(define-abbrev-table 'javascript-mode-abbrev-table
+  '(
+    ("cl" "" snippet-abbrev-javascript-mode-cl 0)
+    ("df" "" snippet-abbrev-javascript-mode-df 0)
+    ("for" "" snippet-abbrev-javascript-mode-for 0)
+    ("forin" "" snippet-abbrev-javascript-mode-forin 0)
+    ("fun" "" snippet-abbrev-javascript-mode-fun 1)
+    ("if" "" snippet-abbrev-javascript-mode-if 0)
+    ("ifel" "" snippet-abbrev-javascript-mode-ifel 0)
+    ("lambda" "" snippet-abbrev-javascript-mode-lambda 0)
+    ("trn" "" snippet-abbrev-javascript-mode-trn 0)
+    ("var" "" snippet-abbrev-javascript-mode-var 1)
+    ("wh" "" snippet-abbrev-javascript-mode-wh 0)
+    ("whinc" "" snippet-abbrev-javascript-mode-whinc 0)
+   ))
+
+(define-abbrev-table 'js-mode-abbrev-table '())
+
+(define-abbrev-table 'js2-mode-abbrev-table '())
+
+(define-abbrev-table 'lisp-mode-abbrev-table '())
+
+(define-abbrev-table 'message-mode-abbrev-table '())
+
+(define-abbrev-table 'messages-buffer-mode-abbrev-table '())
+
+(define-abbrev-table 'neotree-mode-abbrev-table '())
+
+(define-abbrev-table 'objc-mode-abbrev-table
+  '(
+   ))
+
+(define-abbrev-table 'occur-edit-mode-abbrev-table '())
+
+(define-abbrev-table 'occur-mode-abbrev-table '())
+
+(define-abbrev-table 'package-menu-mode-abbrev-table '())
+
+(define-abbrev-table 'pike-mode-abbrev-table
+  '(
+   ))
+
+(define-abbrev-table 'process-menu-mode-abbrev-table '())
+
+(define-abbrev-table 'prog-mode-abbrev-table '())
+
+(define-abbrev-table 'special-mode-abbrev-table '())
+
+(define-abbrev-table 'tabulated-list-mode-abbrev-table '())
+
+(define-abbrev-table 'tar-mode-abbrev-table '())
+
+(define-abbrev-table 'text-mode-abbrev-table '())
+
+(define-abbrev-table 'url-cookie-mode-abbrev-table '())
+
+(define-abbrev-table 'vc-git-log-edit-mode-abbrev-table '())
+
+(define-abbrev-table 'vc-git-log-view-mode-abbrev-table '())
+
