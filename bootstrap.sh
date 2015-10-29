@@ -16,6 +16,9 @@ ln -is $PWD/git/.gitignore_global ~/.gitignore_global
 # link tmux config
 ln -is $PWD/.tmux.conf ~/.tmux.conf
 
+# install nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+
 if [[ $OS == 'Darwin' ]]; then
   ./bootstrap-osx.sh
 fi

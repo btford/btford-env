@@ -22,40 +22,26 @@ alias subrv='subl `git diff-tree --no-commit-id --name-only -r ${1:-"HEAD"}`'
 alias sz='source ~/.zshrc'
 
 # z.sh – https://github.com/rupa/z
-source $HOME/Development/z/z.sh
+[ -s "$HOME/Development/z/z.sh" ] && . "$HOME/Development/z/z.sh"
 
 ## Path
 #######
 
-# npm
-export PATH=$PATH:/usr/local/share/npm/bin
+# Add binaries installed via Homebrew to our PATH.
+export PATH=$HOME/.homebrew/bin:$PATH
+
+# use core utils
+export PATH="$HOME/.homebrew/opt/coreutils/libexec/gnubin:$PATH"
+export MANPATH="$HOME/.homebrew/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # This loads nvm
-[ -s "/Users/bford/.nvm/nvm.sh" ] && . "/Users/bford/.nvm/nvm.sh"
-
-# dart
-export PATH=$PATH:$HOME/Development/dart/dart-sdk/bin
+[ -s "$HOME/.nvm/nvm.sh" ] && . "$HOME/.nvm/nvm.sh"
 
 # CHROME_BIN: path to a Chrome browser executable; e.g.,
-# export CHROME_BIN="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+export CHROME_BIN="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 # DARTIUM_BIN: path to a Dartium browser executable; e.g.,
-export DARTIUM_BIN="$HOME/Development/dart/chromium/Chromium.app/Contents/MacOS/Chromium"
-
-# gcutil
-export PATH=$PATH:/Users/bford/google-cloud-sdk/bin
-
-# coreutils
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-
-# go
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-
-# go completion on OS X
-source /usr/local/share/zsh/site-functions/go
+export DARTIUM_BIN="/Applications/Chromium.app/Contents/MacOS/Chromium"
 
 # dir colors
 d=~/.dircolors
